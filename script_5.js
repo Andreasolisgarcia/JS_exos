@@ -35,19 +35,21 @@ for (let i = 1; i < books.length; i++) {
         mostRented = books[i];
     }
 }
+
 console.log(`****Le livre le plus emprunté est "${mostRented.title}", en total ${mostRented.rented}, fois *****`);
 
 //   Quel est le livre le moins emprunté ?
 
 console.log("Quel est livre le moins emprunté ?");
 let leastRented = books[0];
-for (let i = 1; i > books.length; i++) {
+let i = 0
+while (i < books.length){
     if (books[i].rented < leastRented.rented) {
-        leastRented = books[i];
+       leastRented = books[i];
     }
+    i++;
 }
 console.log(`***** Le livre le moins emprunté est "${leastRented.title}", en total ${leastRented.rented}, fois *****`);
-
 //   Trouve le livre avec l'ID: 873495 ;
 
 console.log("Trouve le livre avec l'ID: 873495");
