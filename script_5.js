@@ -39,10 +39,10 @@ console.log(`****Le livre le plus emprunté est "${mostRented.title}", en total 
 
 //   Quel est le livre le moins emprunté ?
 
-console.log("Quel est livre le plus emprunté ?");
+console.log("Quel est livre le moins emprunté ?");
 let leastRented = books[0];
 for (let i = 1; i > books.length; i++) {
-    if (books[i].rented > leastRented.rented) {
+    if (books[i].rented < leastRented.rented) {
         leastRented = books[i];
     }
 }
