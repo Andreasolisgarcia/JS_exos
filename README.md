@@ -1,0 +1,1 @@
+First exos of JavaScript language
