@@ -6,6 +6,9 @@
 
 
 let num = prompt("De quel nombre veux-tu calculer la factorielle ?");
+if (num == 0){
+    num = 1;
+}
 let i = num;
 
 while (i > 1) { 
